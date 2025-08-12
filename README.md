@@ -7,7 +7,7 @@ know which motor on which port is which type.
 
 | GM6020               | M3508                                         | M2006                                         |
 | -------------------- | --------------------------------------------- | --------------------------------------------- |
-| ![](assets/gm6020.png) | `<img src="assets/m3508.png"  width="200">` | `<img src="assets/m2006.png"  width="100">` |
+| ![](assets/gm6020.png) | <img src="assets/m3508.png"  width="200"> | <img src="assets/m2006.png"  width="100"> |
 
 ## Constructor
 
