@@ -135,7 +135,7 @@ There are a number of remote functions and variables that we use to interface wi
 
 ![](assets/dt7.png)
 
-The four axes are `leftX`, `leftY`,`rrightX`, `rightY`, and they have bounds of -660 to 660.
+The four axes are `leftX`, `leftY`,`rightX`, `rightY`, and they have bounds of -660 to 660.
 The two switches are `leftSwitch` and `rightSwitch`, and they have one of three states, `Remote::SwitchState::UP`, `Remote::SwitchState::MID`, or `Remote::SwitchState::DOWN`. You can access them by doing something like `remote.rightSwitch()` or `remote.leftY()`.
 
 ## Chassis Motors and Wheels
@@ -155,7 +155,7 @@ We have three robot modes we want you to code, depending on the left switch. If 
 For all three modes, set the respective element to a scalar times the left stick x `leftX` value.
 For power mode, set the motor's power to 20 times the left stick X value.
 For speed mode, set the motor's speed to 5 times the left stick X value.
-for position mode, set the motor's position to 10 times the left stick X value.
+For position mode, set the motor's position to 10 times the left stick X value.
 
 You can use getData to see what the value is, given a specific `motorDataType`.
 
@@ -173,6 +173,7 @@ All motors will be on CANBUS 1, of type M3508, and they will be ID'd as such. Fr
 
 Consider the wheels in an orientation like so, and assume that a wheel will move clockwise when given a positive speed.
 ![](assets/omni.png)
+
 (This is not what our robots look like, this was a frame when we were switching chassis types two years ago, it's the only good photo I have of all four wheels and the frame.)
 
 See if you can figure out the formula to do so on your own.
